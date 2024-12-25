@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, useEffect, use } from 'react';
+import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col';
 
 function App() {
   const[offset, setOffset] = useState(0);
-  const[limit, setLimit] = useState(4);
+  const[limit, setLimit] = useState(16);
   const[data, setData] = useState([]);
   const[isLoading, setIsLoading] = useState(false);
   
@@ -88,7 +88,7 @@ function CreateCard(title)
       </Container>
       <button id='back' onClick={decOffset}>Previous</button>
       <button id='next' onClick={incOffset}>Next</button>
-      <div id='pagin'>Page:{offset / 5}</div>
+      <div id='pagin'>Page:{offset / 5 + 1}</div>
 
     </div>
 
