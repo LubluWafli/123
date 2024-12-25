@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import { Container } from 'react-bootstrap';
+import Container from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
